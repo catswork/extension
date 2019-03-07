@@ -1,0 +1,51 @@
+@import (reference) '~less/variables.less';
+
+.container {
+	padding: 1.25em;
+
+	.header {
+		color: @mediumDark;
+		margin: 0.375em 0;
+		font-size: 1em;
+		font-weight: 400;
+
+		.border {
+			display: inline-block;
+			padding: 0.125em 0;
+			border-bottom: 3px solid @primary;
+		}
+	}
+
+	.buttonContainer {
+		margin-top: 0.5em;
+		margin-bottom: 0.75em;
+
+		.button {
+			display: block;
+			margin-bottom: 0.375em;
+		}
+	}
+
+	.divider {
+		margin: 2em 2.5em;
+		margin-top: 2.25em;
+		border-bottom: 3px solid @light;
+	}
+
+	.links {
+		margin-top: 1em;
+		text-align: center;
+
+		.link {
+			color: @blue;
+			margin: 0 0.5em;
+			font-size: 0.625em;
+			text-decoration: none;
+			opacity: 0.875;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

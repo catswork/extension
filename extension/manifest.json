@@ -1,0 +1,12 @@
+{
+	"name": "CatsWork",
+	"version": "1.0",
+	"description": "CatsWork extension",
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"http://localhost:7777/"
+	],
+	"manifest_version": 2
+}

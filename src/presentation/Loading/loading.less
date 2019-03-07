@@ -1,0 +1,23 @@
+@import (reference) '~less/variables.less';
+
+@keyframes spinning {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.loading {
+	position: fixed;
+	top: calc(50% - 1.5em);
+	left: calc(50% - 0.75em);
+	width: 1.5em;
+	height: 1.5em;
+	background-color: @primary;
+	border: 3px solid darken(@primary, 10%);
+	border-radius: 10px;
+	z-index: 100;
+	animation: spinning 1.5s ease infinite;
+}
